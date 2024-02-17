@@ -1,0 +1,38 @@
+{
+  "name": "rocketnotes_api",
+  "version": "1.0.0",
+  "description": "Rocket Notes API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "dev-migrate": "knex migrate:latest && nodemon ./src/server.js",
+    "dev-migrate-seed": "knex migrate:latest && knex seed:run && nodemon ./src/server.js"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "javascript",
+    "express",
+    "encryp",
+    "jsonwebtoken",
+    "knex",
+    "multer"
+  ],
+  "author": "Sergio Mello",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.1",
+    "knex": "^2.5.1",
+    "multer": "^1.4.5-lts.1",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
